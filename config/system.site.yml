@@ -1,0 +1,14 @@
+uuid: ed08229f-dbcf-4e8f-90f1-3bcf9ff97db6
+name: nedcamp
+mail: rick@flowmediadesign.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
