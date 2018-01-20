@@ -20,17 +20,20 @@ Once everything is setup, normal workflow is shown below. See this Pantheon doc 
 - Create a feature branch off of master branch. You may want to give that branch your name.
 - Do work in that features branch.
 - When you like the work on local, push that branch `git push origin name` where `name` is the name of your branch.
-- Note this will automatically create or updates an environment on Pantheon:  http://name-nedcamp.pantheonsite.io  ...so you can check it out there also. 
+- Note this will automatically create an environment on Pantheon:  http://id-nedcamp.pantheonsite.io  ...so you can check it out there also. 
 - On Github, do a pull request to pull your branch `name` into `master`. 
 - When the pull request is approved and merged it will deploy to the dev site:  http://dev-nedcamp.pantheonsite.io/
 
-NOTE: I am not 100% sure about above, you may need to merge into dev via the Pantheon dashobard.
-
-- When ready, deploy from dev to test, then from test to live.  That is done via the Pantheon dashboard.
+From Pantheon:
+"Once your tests have passed, and there is nothing else that you wish to add to this particular feature, click on the Merge Pull Request.
+When your Pull Request is merged, one more test run will be started to test the result of combining the code and configuration from your Pull Request with the master branch. Once this test passes, the configuration for your site will be applied to the Dev environment, and the corresponding Multidev environment will be deleted. Note that database content is not merged; make sure that you have exported your configuration before merging your Pull Request to ensure that configuration changes are not lost.
+You may now use the Pantheon dev / test / live workflow to deploy your site as usual. Continue reading this guide to learn how to manage core updates and create a custom theme."
+See: https://pantheon.io/docs/guides/build-tools/merge/
 
 At this point, there is no test and live, we will be working just with dev, and with staging once that is setup. 
 
-Note that the workflow uses CircleCI, so pushing to Github triggers a push to CircleCI then to Pantheon. 
+The workflow uses CircleCI, so pushing to Github triggers a push to CircleCI then to Pantheon. 
+
 
 ### Set up your local (with MAMP or whatever) 
 
@@ -77,4 +80,6 @@ Note that the workflow uses CircleCI, so pushing to Github triggers a push to Ci
 - To connect to the database with Sequel Pro (or similar use localhost, the creds as shown, and port 32770 (note yours may be different). 
 
 - If you have been given access to the Pantheon dashoard, you should be able to run the command `lando pull`  It will ask you what site to pull from (probably will just list nedcamp) and whether you want to pull code (say no, you already have it) or database (say yes) or files (optional). 
+
+
 
