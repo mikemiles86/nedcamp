@@ -4,33 +4,29 @@ This is the README for the New England Drupal Camp website.
 
 ### Server and workflow 
 
-The site is hosted on Pantheon. 
-
-Dashboard: https://dashboard.pantheon.io/sites/1e9ab33c-01d3-42bd-bb42-5008333172a3#dev/content/export
-
-You must have a Pantheon account and have that account added to this site.
+The site is hosted on Pantheon. You must have a Pantheon account and have that account added to this site to access the dashboard. 
 
 Repo: git@github.com:NEDCampDev/nedcamp.git
 
 On Pantheon sites, the master branch is used on the dev, test and live environments.
 
 Dev:  http://dev-nedcamp.pantheonsite.io/  
-user/pass to unlock is nedcamp/nedcamp
+user/pass to unlock is (ask). 
 
 Normally there will also be a staging branch and environment, but at this time that are not setup yet.
 
-Once everything is setup, normal workflow is:
+Once everything is setup, normal workflow is shown below. See this Pantheon doc for more:  https://pantheon.io/docs/guides/build-tools/new-pr/ 
 
-1. Create a feature branch off of master branch.
+1. Create a feature branch off of master branch. You may want to give that branch your name.
 2. Do work in that features branch.
-3. When ready, merge festure branch into staging branch.
-4. Push staging branch (git push origin staging) to deploy to staging environment. 
-5. QA on staging environment.
-6. When ready, merge the feature branch into master.
-7. Push master branch (git push origin master) to deploy to dev environment. 
-8. When ready, deploy from dev to test, then from test to live.  That is done via the Pantheon dashboard.
+3. When you like the work on local, push that branch `git push origin name` where `name` is the name of your branch.
+4. Note this will automatically create or updates an environment on Pantheon:  http://name-nedcamp.pantheonsite.io  ...so you can check it out there also. 
+5. On Github, do a pull request to pull your branch `name` into `master`. 
+6. When the pull request is approved and merged it will deploy to the dev site:  http://dev-nedcamp.pantheonsite.io/
 
-NOTE: above may be changed to do more of a pull request type of workflow in Github. 
+NOTE: I am not 100% sure about above, you may need to merge into dev via the Pantheon dashobard.
+
+8. When ready, deploy from dev to test, then from test to live.  That is done via the Pantheon dashboard.
 
 At this point, there is no test and live, we will be working just with dev, and with staging once that is setup. 
 
