@@ -1,0 +1,13 @@
+name: NEDCamp Classy
+type: theme
+description: 'A sub theme of Classy to be used as a starter.'
+version: VERSION
+core: 8.x
+base theme: classy
+
+libraries:
+  - nedcamp_classy/base
+  - nedcamp_classy/bootstrap
+
+
+
