@@ -9,19 +9,5 @@ libraries:
   - nedcamp_classy/base
   - nedcamp_classy/bootstrap
 
-ckeditor_stylesheets:
-  - css/ckeditor.css
 
-regions:
-  header: Header
-  primary_menu: Primary
-  secondary_menu: Secondaru menu
-  breadcrumb: Breadcrumbs
-  highlighted: Highlighted
-  help: Help
-  # above is from Classy
-  content_row_1: Content Row 1
-  content_row_2: Content Row 2
-  content_row_3: Content Row 3
-  # belows is from Classy
-  footer: Footer
+
