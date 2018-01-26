@@ -71,6 +71,18 @@ init_site ()
 
   cd $DOCROOT_PATH
 
+  local example_htaccess_file="${DOCROOT_PATH}/example.htaccess"
+  local htaccess_file="${DOCROOT_PATH}/.htaccess"
+
+  if [ -f "$htaccess_file" ]; then
+    echo-yellow "htaccess file already exists, skipping."
+  else
+    if [ -f "$example_htaccess_file" ]; then
+      echo-green "Copying htaccess..."
+      cp "$example_htaccess_file" "$htaccess_file"
+    fi
+  fi
+
   # We disable email sending here so site-install does not return an error
   echo-green "Installing site using ${PROFILE_NAME} profile"
   PHP_OPTIONS="-d sendmail_path=`which true`"
