@@ -1,0 +1,146 @@
+#!/usr/bin/env bash
+
+## Initialize a development site from aliased environment. Assumes production by default.
+##
+## Usage: fin setup basic
+
+# Abort if anything fails.
+set -e
+
+# Include utility functions.
+. $ADDON_ROOT/../utility/utility.bash
+
+
+
+
+
+#-------------------------- Functions --------------------------------
+
+# Initialize local settings files
+init_project ()
+{
+  local example_settings_file="${SITEDIR_PATH}/settings/example.settings.php"
+  local example_settings_local_file="${SITEDIR_PATH}/settings/example.settings.local.php"
+  local example_drush_file="${SITEDIR_PATH}/settings/example.local.aliases.drushrc.php"
+  local settings_file="${SITEDIR_PATH}/settings.php"
+  local settings_local_file="${SITEDIR_PATH}/settings.local.php"
+  local drush_file="${SITEDIR_PATH}/../../../drush/aliases/local.aliases.drushrc.php"
+
+  if [ -f "$settings_file" ]; then
+    echo-yellow "settings file already exists, skipping."
+  else
+    if [ -f "$example_settings_file" ]; then
+      echo-green "Making site directory writable..."
+      chmod 755 "${SITEDIR_PATH}"
+      echo-green "Copying settings..."
+      cp "$example_settings_file" "$settings_file"
+    fi
+  fi
+
+  if [ -f "$settings_local_file" ]; then
+    echo-yellow "Local settings file already exists, skipping."
+    echo-red "Make sure your local settings database info matches Docksal's database info. Refer to example.settings.local.php."
+    if [ -z ${ASSUME_YES+x} ]; then
+      _confirm "Have you verified that local settings matches Docksal database?"
+    fi
+  else
+    if [ -f "$example_settings_local_file" ]; then
+      echo-green "Copying local settings..."
+      cp "$example_settings_local_file" "$settings_local_file"
+    fi
+  fi
+
+  if [ -f "$drush_file" ]; then
+    echo-yellow "Local drush file already exists, skipping."
+  else
+    if [ -f "$example_drush_file" ]; then
+      echo-green "Copying local drush..."
+      cp "$example_drush_file" "$drush_file"
+    fi
+  fi
+}
+
+init_site ()
+{
+  echo-green "Making site directory writable..."
+  chmod 755 "${SITEDIR_PATH}"
+
+  # Install any composer updates.
+  echo-green "Installing composer packages"
+  fin exec composer install
+
+  cd $DOCROOT_PATH
+
+  # We disable email sending here so site-install does not return an error
+  echo-green "Installing site using ${PROFILE_NAME} profile"
+  PHP_OPTIONS="-d sendmail_path=`which true`"
+  fin drush site-install "${PROFILE_NAME}" -y --site-name="${SITE_NAME}"
+
+  if [ -z "$SITE_UUID" ]; then
+    echo-yellow "UUID is not set, install will create new one."
+  else
+    # Reset site UUID to match exsting.
+    echo-green "Resetting site UUID"
+    fin drush cset system.site uuid "${SITE_UUID}" -y;
+
+    # Clear default entities for shortcut before re-import (see: https://www.drupal.org/node/2583113)
+    fin drush ev '\Drupal::entityManager()->getStorage("shortcut_set")->load("default")->delete();'
+
+    # Import default config.
+    echo-green "Importing default config"
+    fin drush cim -y
+  fi
+
+  # clear cache & run cron
+  echo-green "Rebuilding caches and running cron"
+  fin drush cr
+  fin drush cron
+
+}
+#-------------------------- END: Functions --------------------------------
+
+#-------------------------- Execution --------------------------------
+
+# Project initialization steps
+echo -e "${green_bg} Step 1 ${NC}${green} Setup local project configuration...${NC}"
+
+init_project
+
+if [[ "$PROJECT_ROOT" == "" ]]; then
+  echo-red "\$PROJECT_ROOT is not set"
+  exit 1
+fi
+
+if [[ $DOCKER_RUNNING == "true" ]]; then
+  echo -e "${green_bg} Step 2 ${NC}${green} Recreating services...${NC}"
+  fin reset -f
+else
+  echo -e "${green_bg} Step 2 ${NC}${green} Creating services...${NC}"
+  fin up
+fi
+
+echo "Waiting 10s for MySQL to initialize...";
+sleep 10
+
+echo -e "${green_bg} Step 3 ${NC}${green} Installing site...${NC}"
+
+if is_windows; then
+  echo-green "Add ${VIRTUAL_HOST} to your hosts file (/etc/hosts), e.g.:"
+  echo-green "192.168.64.100 ${VIRTUAL_HOST}"
+  echo
+fi
+
+init_site
+
+
+echo -e "${green_bg} Step 4 ${NC}${green} Refreshing site...${NC}"
+if [ "$SYNC_DRUSH_ALIAS" != "" ]; then
+    if [ -z ${ASSUME_YES+x} ]; then
+        time fin refresh
+    else
+        time fin refresh -y
+    fi
+fi
+
+echo -en "${green_bg} DONE! ${NC} "
+echo -e "Open ${yellow}http://${VIRTUAL_HOST}${NC} in your browser to verify the setup."

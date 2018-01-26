@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+## Refreshes your database from target alias and runs updates.
+##
+## Usage: fin refresh [alias]
+
+# Abort if anything fails.
+set -e
+
+# Include utility functions.
+. $ADDON_ROOT/../utility/utility.bash
+
+#-------------------------- Settings --------------------------------
+
+sync_alias=${1:-$SYNC_DRUSH_ALIAS}
+
+#-------------------------- END: Settings --------------------------------
+
+
+
+if [ -z ${ASSUME_YES+x} ]; then
+    _confirm "Are you sure you want to refresh from ${sync_alias}? This will destroy your local database."
+fi
+
+fin drush $LOCAL_DRUSH_ALIAS sql-sync $sync_alias $LOCAL_DRUSH_ALIAS --create-db --structure-tables-key=common -y
+fin run-update
