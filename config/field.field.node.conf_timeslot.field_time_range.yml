@@ -1,0 +1,21 @@
+uuid: 631f2bc6-7144-4051-ae6c-40546103137c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time_range
+    - node.type.conf_timeslot
+  module:
+    - datetime_range
+id: node.conf_timeslot.field_time_range
+field_name: field_time_range
+entity_type: node
+bundle: conf_timeslot
+label: 'Time Range'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

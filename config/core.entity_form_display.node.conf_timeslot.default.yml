@@ -1,0 +1,42 @@
+uuid: 68613cef-8e6a-4167-bb23-97aa675534bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.conf_timeslot.field_conf_year
+    - field.field.node.conf_timeslot.field_time_range
+    - node.type.conf_timeslot
+  module:
+    - time_range
+id: node.conf_timeslot.default
+targetEntityType: node
+bundle: conf_timeslot
+mode: default
+content:
+  field_conf_year:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_time_range:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: time_range
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

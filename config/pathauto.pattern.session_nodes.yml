@@ -5,18 +5,18 @@ dependencies:
   module:
     - node
 id: session_nodes
-label: 'session nodes'
+label: 'Session Nodes'
 type: 'canonical_entities:node'
 pattern: 'sessions/[node:field_conf_year]/[node:title]'
 selection_criteria:
-  eb9a3ab0-c37e-44e9-a64e-14d2f6ab80b0:
+  fd810b32-d8ce-4dbe-9fbe-d908ab834fd3:
     id: node_type
     bundles:
       session: session
     negate: false
     context_mapping:
       node: node
-    uuid: eb9a3ab0-c37e-44e9-a64e-14d2f6ab80b0
+    uuid: fd810b32-d8ce-4dbe-9fbe-d908ab834fd3
 selection_logic: and
 weight: -5
 relationships: {  }

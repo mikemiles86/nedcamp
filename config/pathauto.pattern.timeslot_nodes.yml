@@ -1,0 +1,22 @@
+uuid: f1fdba97-ee31-4b77-a31f-260219a547c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: timeslot_nodes
+label: 'Timeslot Nodes'
+type: 'canonical_entities:node'
+pattern: 'timeslotes/[node:field_conf_year]/[node:title]'
+selection_criteria:
+  2d3609dd-c3bf-4aa7-ae98-d5e3fa0569b8:
+    id: node_type
+    bundles:
+      conf_timeslot: conf_timeslot
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 2d3609dd-c3bf-4aa7-ae98-d5e3fa0569b8
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,29 @@
+uuid: 6ee19c79-23b4-4eb4-b497-21e6b6d498cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_conf_timeslot
+    - node.type.conf_timeslot
+    - node.type.session
+id: node.session.field_conf_timeslot
+field_name: field_conf_timeslot
+entity_type: node
+bundle: session
+label: Timeslot
+description: 'Select the time of this event'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      conf_timeslot: conf_timeslot
+    sort:
+      field: nid
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

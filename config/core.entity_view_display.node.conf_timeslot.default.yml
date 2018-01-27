@@ -1,0 +1,29 @@
+uuid: e6045c07-7150-4763-84e4-9e7ae79dff53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.conf_timeslot.field_conf_year
+    - field.field.node.conf_timeslot.field_time_range
+    - node.type.conf_timeslot
+  module:
+    - datetime_range
+    - user
+id: node.conf_timeslot.default
+targetEntityType: node
+bundle: conf_timeslot
+mode: default
+content:
+  field_time_range:
+    weight: 0
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: 'H:ia'
+      separator: '-'
+    third_party_settings: {  }
+    type: daterange_custom
+    region: content
+hidden:
+  field_conf_year: true
+  links: true

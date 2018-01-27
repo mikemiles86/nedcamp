@@ -1,0 +1,18 @@
+uuid: 9e3e0958-2637-4a88-a253-d5fe38b970f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.conf_timeslot
+id: node.conf_timeslot.title
+field_name: title
+entity_type: node
+bundle: conf_timeslot
+label: 'Display Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

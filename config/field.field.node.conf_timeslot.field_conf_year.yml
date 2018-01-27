@@ -1,0 +1,29 @@
+uuid: 4a81d26c-3f10-4c99-8eda-3a876b719e20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_conf_year
+    - node.type.conf_timeslot
+    - taxonomy.vocabulary.conference_years
+id: node.conf_timeslot.field_conf_year
+field_name: field_conf_year
+entity_type: node
+bundle: conf_timeslot
+label: Year
+description: 'Select the Conference year for this timeslot'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      conference_years: conference_years
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
