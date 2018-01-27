@@ -1,0 +1,9 @@
+uuid: 4e592e9a-2df5-4a97-ac51-2068926b37fc
+langcode: en
+status: true
+dependencies: {  }
+name: 'Sponsorship Levels'
+vid: sponsorship_levels
+description: 'Used to group sponsors by type'
+hierarchy: 0
+weight: 0

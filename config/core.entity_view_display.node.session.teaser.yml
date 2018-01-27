@@ -25,4 +25,7 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_slides: true
+  field_speakers: true
+  field_status: true

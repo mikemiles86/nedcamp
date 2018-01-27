@@ -1,0 +1,9 @@
+uuid: 14c2cccc-2eef-4076-8d7f-722c474ea1c5
+langcode: en
+status: true
+dependencies: {  }
+name: Topics
+vid: topics
+description: 'Use to group sessions and trainings by conference topics'
+hierarchy: 0
+weight: 0

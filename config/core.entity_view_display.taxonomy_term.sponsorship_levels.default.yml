@@ -1,0 +1,42 @@
+uuid: db57d20a-5112-4637-bb3c-28b2ecfa781e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.sponsorship_levels.field_conf_year
+    - field.field.taxonomy_term.sponsorship_levels.field_sponsor_cost
+    - taxonomy.vocabulary.sponsorship_levels
+  module:
+    - text
+id: taxonomy_term.sponsorship_levels.default
+targetEntityType: taxonomy_term
+bundle: sponsorship_levels
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_conf_year:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_sponsor_cost:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+hidden: {  }
