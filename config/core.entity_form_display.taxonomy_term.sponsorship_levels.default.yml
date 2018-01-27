@@ -1,0 +1,55 @@
+uuid: 26b08913-b7f6-4778-a5d3-bd4a3144a3b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.sponsorship_levels.field_conf_year
+    - field.field.taxonomy_term.sponsorship_levels.field_sponsor_cost
+    - taxonomy.vocabulary.sponsorship_levels
+  module:
+    - path
+    - text
+id: taxonomy_term.sponsorship_levels.default
+targetEntityType: taxonomy_term
+bundle: sponsorship_levels
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_conf_year:
+    weight: 32
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_sponsor_cost:
+    weight: 31
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,29 @@
+uuid: ecece25d-f91a-448b-911f-5aeb20f31421
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_conf_year
+    - taxonomy.vocabulary.conference_years
+    - taxonomy.vocabulary.sponsorship_levels
+id: taxonomy_term.sponsorship_levels.field_conf_year
+field_name: field_conf_year
+entity_type: taxonomy_term
+bundle: sponsorship_levels
+label: 'Conf Year'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      conference_years: conference_years
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

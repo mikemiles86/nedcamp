@@ -1,0 +1,23 @@
+uuid: 98aaa0fc-cf3c-4cf5-9203-009b5f384df4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_sponsor_cost
+    - taxonomy.vocabulary.sponsorship_levels
+id: taxonomy_term.sponsorship_levels.field_sponsor_cost
+field_name: field_sponsor_cost
+entity_type: taxonomy_term
+bundle: sponsorship_levels
+label: Cost
+description: 'Provide cost of this sponsorship level'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: ''
+field_type: decimal

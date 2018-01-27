@@ -1,0 +1,9 @@
+uuid: d488c360-f0d2-4d0d-8009-59790f8e94fd
+langcode: en
+status: true
+dependencies: {  }
+name: 'Conference Years'
+vid: conference_years
+description: 'Used to group content by conference year.'
+hierarchy: 0
+weight: 0
