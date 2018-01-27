@@ -1,0 +1,22 @@
+uuid: 37451366-89be-4f5a-b2c8-6e82e8ff0a16
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.conf_timeslot
+id: node.conf_timeslot.promote
+field_name: promote
+entity_type: node
+bundle: conf_timeslot
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

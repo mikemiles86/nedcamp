@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff53d67460f4a8b70c93272524e7da5e",
+    "content-hash": "62bd5ab59beccf1700f9e98ff6614880",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1090,6 +1090,66 @@
             "time": "2017-12-08T22:53:11+00:00"
         },
         {
+            "name": "drupal/auto_entitylabel",
+            "version": "2.1.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/auto_entitylabel",
+                "reference": "8.x-2.1-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/auto_entitylabel-8.x-2.1-beta1.zip",
+                "reference": "8.x-2.1-beta1",
+                "shasum": "94a77f55896744075ff21bc2bdfab91308a69a27"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.1-beta1",
+                    "datestamp": "1510484584",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Pravin Ajaaz",
+                    "homepage": "https://www.drupal.org/user/2910049"
+                },
+                {
+                    "name": "RenatoG",
+                    "homepage": "https://www.drupal.org/user/3326031"
+                },
+                {
+                    "name": "bforchhammer",
+                    "homepage": "https://www.drupal.org/user/216396"
+                },
+                {
+                    "name": "purushotam.rai",
+                    "homepage": "https://www.drupal.org/user/3193859"
+                }
+            ],
+            "description": "Allows hiding of entity label fields and automatic label creation.",
+            "homepage": "https://www.drupal.org/project/auto_entitylabel",
+            "support": {
+                "source": "http://cgit.drupalcode.org/auto_entitylabel",
+                "issues": "https://www.drupal.org/project/issues/auto_entitylabel"
+            }
+        },
+        {
             "name": "drupal/config_direct_save",
             "version": "1.0.0",
             "source": {
@@ -2085,6 +2145,54 @@
             "homepage": "https://www.drupal.org/project/simple_block",
             "support": {
                 "source": "http://cgit.drupalcode.org/simple_block"
+            }
+        },
+        {
+            "name": "drupal/time_range",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/time_range",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/time_range-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "5ff76b57ce308b55f8435ab653d6dd767bd25af6"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1514180286",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "dravenk",
+                    "homepage": "https://www.drupal.org/user/3452417"
+                }
+            ],
+            "description": "Provides the form widget to fill in time range.",
+            "homepage": "https://github.com/DravenK/time-range.git",
+            "support": {
+                "source": "https://github.com/DravenK/time-range.git",
+                "issues": "https://github.com/DravenK/time-range/issues"
             }
         },
         {
@@ -7461,6 +7569,7 @@
     "aliases": [],
     "minimum-stability": "alpha",
     "stability-flags": {
+        "drupal/auto_entitylabel": 10,
         "drupal/simple_block": 10
     },
     "prefer-stable": true,

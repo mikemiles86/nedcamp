@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.session.body
     - field.field.node.session.field_audience_level
+    - field.field.node.session.field_conf_timeslot
     - field.field.node.session.field_conf_year
     - field.field.node.session.field_recording
     - field.field.node.session.field_slides
@@ -24,6 +25,7 @@ third_party_settings:
       children:
         - field_status
         - field_conf_year
+        - field_conf_timeslot
         - status
       parent_name: ''
       weight: 10
@@ -56,6 +58,12 @@ content:
     third_party_settings: {  }
   field_audience_level:
     weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_conf_timeslot:
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -110,7 +118,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 12
+    weight: 13
     region: content
     third_party_settings: {  }
   title:
