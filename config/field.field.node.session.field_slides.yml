@@ -1,0 +1,27 @@
+uuid: b1343839-e91b-48b4-9d40-a7b28da7f02e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slides
+    - node.type.session
+  module:
+    - file
+id: node.session.field_slides
+field_name: field_slides
+entity_type: node
+bundle: session
+label: Slides
+description: 'Upload your slides here as a PDF, or link to them from the description. (This is typically done after your session.)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'slides/[date:custom:Y]'
+  file_extensions: 'ppt pdf odt odp'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

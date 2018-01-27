@@ -1,0 +1,9 @@
+uuid: 3b974ea5-5350-449c-9925-7414d8278459
+langcode: en
+status: true
+dependencies: {  }
+name: 'Audience Levels'
+vid: audience_levels
+description: 'Use to group sessions and trainings by attendee experience.'
+hierarchy: 0
+weight: 0

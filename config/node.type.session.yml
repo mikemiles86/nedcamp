@@ -1,0 +1,17 @@
+uuid: 7bb1cad0-c505-40a6-8d25-84c5f7611564
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Session
+type: session
+description: 'Use this content type to propose sessions at the event.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true
