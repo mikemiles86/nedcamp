@@ -6,7 +6,7 @@ This is the README for the New England Drupal Camp website.
 
 The site is hosted on Pantheon. You must have a Pantheon account and have that account added to this site to access the dashboard. 
 
-Repo: git@github.com:NEDCampDev/nedcamp.git
+Repo: git@github.com:NEDCamp/nedcamp.git
 
 On Pantheon sites, the master branch is used on the dev, test and live environments.
 
@@ -81,7 +81,11 @@ The workflow uses CircleCI, so pushing to Github triggers a push to CircleCI the
 
 - If you have been given access to the Pantheon dashoard, you should be able to run the command `lando pull`  It will ask you what site to pull from (probably will just list nedcamp) and whether you want to pull code (say no, you already have it) or database (say yes) or files (optional). 
 
+### Set up you local with Docksal
 
+Mike added files to use Docksal on local.
+
+Run `fin init` in the site root. 
 
 
 
