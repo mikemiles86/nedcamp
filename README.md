@@ -6,7 +6,7 @@ This is the README for the New England Drupal Camp website.
 
 The site is hosted on Pantheon. You must have a Pantheon account and have that account added to this site to access the dashboard. 
 
-Repo: git@github.com:NEDCampDev/nedcamp.git
+Repo: git@github.com:NEDCamp/nedcamp.git
 
 On Pantheon sites, the master branch is used on the dev, test and live environments.
 
