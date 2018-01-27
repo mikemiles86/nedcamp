@@ -103,8 +103,8 @@ Local development using Lando is supported.
 1. To connect to the database with Sequel Pro (or similar use localhost), the creds as shown, and port 32770 (note yours may be different). 
 
 #### Development
- * If you have been given access to the Pantheon dashoard, you should be able to run the command `lando pull`  It will ask you what site to pull from (probably will just list nedcamp) and whether you want to pull code (say no, you already have it) or database (say yes) or files (optional). 
-
+ * If you have been given access to the Pantheon dashboard, you should be able to run the command `lando pull`  It will ask you what site to pull from (probably will just list nedcamp) and whether you want to pull code (say no, you already have it) or database (say yes) or files (optional). 
+ * After pulling the latest changes from github, be sure to run `composer install` before starting any new work, so that any new modules will be downloaded.
 
 ### Docksal<a name="local-docksal"></a>
 
@@ -113,12 +113,12 @@ Docksal is a docker based development environment. It is supported for local dev
 #### Setup
 1. Clone your [Forked repo](#workflow-forks)
 1. [Install Docksal](https://docs.docksal.io/en/master/getting-started/setup/)
+1. If you have Pantheon access, [download your Pantheon drush aliases](https://pantheon.io/docs/drush/) and place the file within the `/drush/aliases/` directory
 1. From within the directory you cloned the repo into run `fin init`
-1. If you have Pantheon access, []download your Pantheon drush aliases](https://pantheon.io/docs/drush/) and place the file within the `/drush/aliases/` directory
 1. Access your local site by going to [http://nedcamp.docksal](http://nedcamp.docksal)
 
 #### Development
-* Anytime you pull down from github you should re-run `fin init` as this will rebuild your local environment, importing all existing configs and a copy of the database from Pantheon.
+* Anytime you pull down from github you should re-run `fin init` as this will rebuild your local environment, downloading all composer dependencies, importing all existing configs and a copy of the database from Pantheon.
 * The repo comes with a built in local drush alias file. Local development environment alias is `@local.nedcamp`
 * To run drush commands, prefix your command with `fin` (this is the docksal command). Example: `fin drush @local.nedcamp status`
 
