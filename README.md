@@ -83,7 +83,9 @@ The workflow uses CircleCI, so pushing to Github triggers a push to CircleCI the
 
 ### Set up you local with Docksal
 
-Mike setup 
+Mike added files to use Docksal on local.
+
+Run `fin init` in the site root. 
 
 
 
