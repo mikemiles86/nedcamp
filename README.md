@@ -81,7 +81,9 @@ The workflow uses CircleCI, so pushing to Github triggers a push to CircleCI the
 
 - If you have been given access to the Pantheon dashoard, you should be able to run the command `lando pull`  It will ask you what site to pull from (probably will just list nedcamp) and whether you want to pull code (say no, you already have it) or database (say yes) or files (optional). 
 
+### Set up you local with Docksal
 
+Mike setup 
 
 
 
