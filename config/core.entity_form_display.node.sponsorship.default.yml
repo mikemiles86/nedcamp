@@ -1,0 +1,68 @@
+uuid: c0fa797a-9ed2-49a7-85fd-1d6cf9da2e36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sponsorship.field_company
+    - field.field.node.sponsorship.field_conf_year
+    - field.field.node.sponsorship.field_sponsor_level
+    - node.type.sponsorship
+  module:
+    - inline_entity_form
+id: node.sponsorship.default
+targetEntityType: node
+bundle: sponsorship
+mode: default
+content:
+  field_company:
+    weight: 1
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_conf_year:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_sponsor_level:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true
