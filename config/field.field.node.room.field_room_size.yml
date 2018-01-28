@@ -1,0 +1,23 @@
+uuid: 6af58d02-10b1-46c4-a043-4c9697c7737a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_room_size
+    - node.type.room
+id: node.room.field_room_size
+field_name: field_room_size
+entity_type: node
+bundle: room
+label: 'Room Size'
+description: 'Provide the size of this room (seating)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

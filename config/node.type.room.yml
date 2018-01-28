@@ -1,0 +1,17 @@
+uuid: 89f6cada-1f4c-480d-ac8d-b4fdc8dad503
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Room
+type: room
+description: 'Use this entity type to create a room to be used at the event.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,41 +1,39 @@
-uuid: 80a84cf9-431f-4b60-aaa2-41b026bb7011
+uuid: aeed824f-7732-4ad6-9d85-75dc9c3e74d3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.conf_day.field_conf_year
-    - field.field.node.conf_day.field_date
-    - field.field.node.conf_day.field_day_timeslots
-    - node.type.conf_day
+    - field.field.node.room.field_directions
+    - field.field.node.room.field_location
+    - field.field.node.room.field_room_size
+    - node.type.room
   module:
-    - datetime
-    - inline_entity_form
-id: node.conf_day.default
+    - text
+id: node.room.default
 targetEntityType: node
-bundle: conf_day
+bundle: room
 mode: default
 content:
-  field_conf_year:
-    weight: 2
+  field_directions:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_location:
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
-  field_date:
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_day_timeslots:
-    weight: 3
+  field_room_size:
+    weight: 2
     settings:
-      form_mode: default
-      label_singular: ''
-      label_plural: ''
-      override_labels: false
+      placeholder: ''
     third_party_settings: {  }
-    type: inline_entity_form_simple
+    type: number
     region: content
   status:
     type: boolean_checkbox

@@ -12,7 +12,7 @@ entity_type: node
 bundle: conf_timeslot
 label: Year
 description: 'Select the Conference year for this timeslot'
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''

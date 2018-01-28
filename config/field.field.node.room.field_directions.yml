@@ -1,0 +1,21 @@
+uuid: a98c2b0d-3de9-4f57-bbcc-9358ae24a75c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_directions
+    - node.type.room
+  module:
+    - text
+id: node.room.field_directions
+field_name: field_directions
+entity_type: node
+bundle: room
+label: Directions
+description: 'Provide any specific directions to this room'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
