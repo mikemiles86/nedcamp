@@ -7,9 +7,11 @@ dependencies:
     - field.field.node.location.field_address
     - field.field.node.location.field_conf_year
     - field.field.node.location.field_directions
+    - field.field.node.location.field_photos
     - node.type.location
   module:
     - address
+    - image
     - text
     - user
 id: node.location.default
@@ -45,6 +47,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_photos:
+    weight: 105
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
   links:
     weight: 100

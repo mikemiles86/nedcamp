@@ -22,6 +22,7 @@
     "drupal/field_group": "^1.0",
     "drupal/inline_entity_form": "^1.0@beta",
     "drupal/media_entity": "^1.7",
+    "drupal/media_entity_image": "^1.2",
     "drupal/pathauto": "^1.0",
     "drupal/simple_block": "^1.0@beta",
     "drupal/time_range": "^1.1",
