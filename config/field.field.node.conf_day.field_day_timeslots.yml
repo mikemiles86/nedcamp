@@ -1,0 +1,28 @@
+uuid: 5dc85168-267d-40f3-92a1-bee823b54d7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_day_timeslots
+    - node.type.conf_day
+    - node.type.conf_timeslot
+id: node.conf_day.field_day_timeslots
+field_name: field_day_timeslots
+entity_type: node
+bundle: conf_day
+label: Timeslots
+description: 'Add timeslots available for this day'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      conf_timeslot: conf_timeslot
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

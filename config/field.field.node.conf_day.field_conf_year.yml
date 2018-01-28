@@ -1,0 +1,29 @@
+uuid: 04e8b6fa-dc50-4039-a98e-fcf2c898187b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_conf_year
+    - node.type.conf_day
+    - taxonomy.vocabulary.conference_years
+id: node.conf_day.field_conf_year
+field_name: field_conf_year
+entity_type: node
+bundle: conf_day
+label: 'Conference Year'
+description: 'Select the conference year this day is associated with.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      conference_years: conference_years
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

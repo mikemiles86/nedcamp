@@ -1,0 +1,18 @@
+uuid: 5db710bd-d7d9-41ee-83ff-7d40b5130603
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.conf_day
+  module:
+    - user
+id: node.conf_day.teaser
+targetEntityType: node
+bundle: conf_day
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }
