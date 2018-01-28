@@ -1,0 +1,17 @@
+uuid: 32e67401-1853-486a-8f0c-d791a33a091b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Generic Event'
+type: event
+description: 'Use this content type to create a generic event at a conference.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
