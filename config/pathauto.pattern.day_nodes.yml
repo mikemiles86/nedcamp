@@ -1,0 +1,22 @@
+uuid: 62cdf828-2842-474a-8a04-d132b7de841c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: day_nodes
+label: 'Day Nodes'
+type: 'canonical_entities:node'
+pattern: 'days/[node:field_conf_year]/[node:title]'
+selection_criteria:
+  708cbb65-51a2-4b04-94be-5127d0c9db4c:
+    id: node_type
+    bundles:
+      conf_day: conf_day
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 708cbb65-51a2-4b04-94be-5127d0c9db4c
+selection_logic: and
+weight: -5
+relationships: {  }

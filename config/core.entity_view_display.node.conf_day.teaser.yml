@@ -15,4 +15,7 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_conf_year: true
+  field_date: true
+  field_day_timeslots: true
