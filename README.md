@@ -181,3 +181,4 @@ A login url for the admin account can be generated with the following Drush comm
 The CircleCi/Pantheon build process should handle updates to any config changes. However if config needs to be manually updated it can be done using the Drush command: `drush @pantheon.nedcamp.[env] cim`
 
 All Pantheon environments are set to have config be read-only. This means they cannot write to the config directory, and config updates need to be done locally [following the outlined steps](#workflow-config).
+
