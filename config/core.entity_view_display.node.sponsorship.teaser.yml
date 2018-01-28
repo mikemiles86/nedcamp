@@ -15,4 +15,7 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_company: true
+  field_conf_year: true
+  field_sponsor_level: true

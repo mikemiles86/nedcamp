@@ -1,0 +1,17 @@
+uuid: c1a7f4fd-9795-4669-8a8a-ef7be5cea752
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Conference
+type: conference
+description: 'Use this entity type to create a conference.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

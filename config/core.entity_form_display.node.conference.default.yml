@@ -1,0 +1,72 @@
+uuid: 7800dfdb-d499-49b4-b8f2-7b6c400f4156
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.conference.body
+    - field.field.node.conference.field_conf_year
+    - field.field.node.conference.field_sponsor
+    - node.type.conference
+  module:
+    - inline_entity_form
+    - text
+id: node.conference.default
+targetEntityType: node
+bundle: conference
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_conf_year:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_sponsor:
+    weight: 3
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  sticky: true
+  uid: true
