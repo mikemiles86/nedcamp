@@ -19,6 +19,7 @@
     "drupal/console": "^1",
     "drupal/core": "^8",
     "drupal/field_group": "^1.0",
+    "drupal/inline_entity_form": "^1.0@beta",
     "drupal/media_entity": "^1.7",
     "drupal/pathauto": "^1.0",
     "drupal/simple_block": "^1.0@beta",
