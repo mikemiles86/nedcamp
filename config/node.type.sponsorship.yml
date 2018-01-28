@@ -1,0 +1,17 @@
+uuid: c9419ed0-6fe9-420d-a8ca-bbafda90f199
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Sponsorship
+type: sponsorship
+description: 'Use this entity type to create event sponsors'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,7 @@
+status: '1'
+pattern: '[node:field_conf_year] - [node:field_company:entity:title] - [node:field_sponsor_level]'
+php: 0
+escape: 0
+dependencies:
+  config:
+    - node.type.sponsorship

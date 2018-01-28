@@ -1,0 +1,22 @@
+uuid: 7aba6a45-6104-4056-9131-483ff2198cde
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: sponsorship_nodes
+label: 'Sponsorship Nodes'
+type: 'canonical_entities:node'
+pattern: 'sponsors/[node:field_conf_year]/[node:field_company:entity:title]'
+selection_criteria:
+  7a25a3b8-c66d-4963-aa62-ce7492f44b98:
+    id: node_type
+    bundles:
+      sponsorship: sponsorship
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 7a25a3b8-c66d-4963-aa62-ce7492f44b98
+selection_logic: and
+weight: -5
+relationships: {  }

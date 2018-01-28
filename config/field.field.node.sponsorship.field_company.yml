@@ -1,0 +1,28 @@
+uuid: 8af5175d-b04f-4dcd-a430-584676bc5c3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company
+    - node.type.company
+    - node.type.sponsorship
+id: node.sponsorship.field_company
+field_name: field_company
+entity_type: node
+bundle: sponsorship
+label: Company
+description: 'Select the Company'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      company: company
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

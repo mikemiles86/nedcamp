@@ -1,0 +1,29 @@
+uuid: 6cfc6279-a41a-4f5d-b8a9-746c07aa2f42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponsor_level
+    - node.type.sponsorship
+    - taxonomy.vocabulary.sponsorship_levels
+id: node.sponsorship.field_sponsor_level
+field_name: field_sponsor_level
+entity_type: node
+bundle: sponsorship
+label: 'Sponsor Level'
+description: 'Select the Sponsor level'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sponsorship_levels: sponsorship_levels
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
