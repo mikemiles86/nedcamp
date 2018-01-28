@@ -1,5 +1,7 @@
 # NEDCamp
 
+[![CircleCI](https://circleci.com/gh/NEDCamp/nedcamp/tree/master.svg?style=svg)](https://circleci.com/gh/NEDCamp/nedcamp/tree/master)
+
 ## Table of Contents
 1. [About](#about)
 1. [Services](#services)
@@ -98,12 +100,12 @@ Local development using Lando is supported.
     "config": {
       "confd": "/Users/rick/.lando/services/config/pantheon/mysql"
     }
-  },  
+  },
 ```
-1. To connect to the database with Sequel Pro (or similar use localhost), the creds as shown, and port 32770 (note yours may be different). 
+1. To connect to the database with Sequel Pro (or similar use localhost), the creds as shown, and port 32770 (note yours may be different).
 
 #### Development
- * If you have been given access to the Pantheon dashboard, you should be able to run the command `lando pull`  It will ask you what site to pull from (probably will just list nedcamp) and whether you want to pull code (say no, you already have it) or database (say yes) or files (optional). 
+ * If you have been given access to the Pantheon dashboard, you should be able to run the command `lando pull`  It will ask you what site to pull from (probably will just list nedcamp) and whether you want to pull code (say no, you already have it) or database (say yes) or files (optional).
  * After pulling the latest changes from github, be sure to run `composer install` before starting any new work, so that any new modules will be downloaded.
 
 ### Docksal<a name="local-docksal"></a>
