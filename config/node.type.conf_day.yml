@@ -1,0 +1,17 @@
+uuid: 82bee988-6cf9-43f6-a07c-e07f86ab0ab2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Day
+type: conf_day
+description: 'Use this content type to create event days'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

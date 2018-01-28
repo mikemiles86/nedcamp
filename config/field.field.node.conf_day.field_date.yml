@@ -1,0 +1,21 @@
+uuid: 72e7b1ae-b99d-43d3-9e57-647ca44573d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.conf_day
+  module:
+    - datetime
+id: node.conf_day.field_date
+field_name: field_date
+entity_type: node
+bundle: conf_day
+label: Date
+description: 'Provide the date'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
