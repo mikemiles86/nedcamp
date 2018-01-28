@@ -1,0 +1,38 @@
+uuid: e06646c4-b10a-4db3-994f-0973474d8915
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company_logo
+    - node.type.company
+  module:
+    - image
+id: node.company.field_company_logo
+field_name: field_company_logo
+entity_type: node
+bundle: company
+label: Logo
+description: 'Provide company logo'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'logos/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image
