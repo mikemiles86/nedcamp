@@ -12,7 +12,7 @@ entity_type: node
 bundle: conf_day
 label: 'Conference Year'
 description: 'Select the conference year this day is associated with.'
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''

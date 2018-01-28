@@ -16,7 +16,6 @@ dependencies:
   module:
     - field_group
     - file
-    - path
     - text
     - video_embed_field
 third_party_settings:
@@ -28,7 +27,7 @@ third_party_settings:
         - field_conf_timeslot
         - status
       parent_name: ''
-      weight: 10
+      weight: 7
       format_type: details
       format_settings:
         id: ''
@@ -50,12 +49,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
-  created:
-    type: datetime_timestamp
-    weight: 8
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_audience_level:
     weight: 3
     settings: {  }
@@ -108,12 +101,6 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
-  path:
-    type: path
-    weight: 9
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
@@ -129,15 +116,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 7
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    region: content
-    third_party_settings: {  }
 hidden:
+  created: true
+  path: true
   promote: true
   sticky: true
+  uid: true

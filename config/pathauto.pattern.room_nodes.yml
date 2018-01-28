@@ -1,0 +1,22 @@
+uuid: 44856c51-5070-46cb-a4e0-cc0b2ee3bf1d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: room_nodes
+label: 'Room Nodes'
+type: 'canonical_entities:node'
+pattern: '[node:field_location:entity:url]/rooms/[node:title]'
+selection_criteria:
+  d27e9eb5-d0d6-405f-aded-374992abc75a:
+    id: node_type
+    bundles:
+      room: room
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d27e9eb5-d0d6-405f-aded-374992abc75a
+selection_logic: and
+weight: -5
+relationships: {  }

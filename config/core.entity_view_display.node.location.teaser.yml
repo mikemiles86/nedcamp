@@ -29,3 +29,4 @@ hidden:
   field_address: true
   field_conf_year: true
   field_directions: true
+  field_photos: true
