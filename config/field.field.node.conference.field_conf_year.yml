@@ -1,0 +1,29 @@
+uuid: 1a426c9e-7b6b-4f2f-8dfa-948a981c045a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_conf_year
+    - node.type.conference
+    - taxonomy.vocabulary.conference_years
+id: node.conference.field_conf_year
+field_name: field_conf_year
+entity_type: node
+bundle: conference
+label: 'Conference Year'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      conference_years: conference_years
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

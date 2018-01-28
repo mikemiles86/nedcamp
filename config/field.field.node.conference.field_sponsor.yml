@@ -1,0 +1,28 @@
+uuid: 19fd024c-e4c9-4f93-b198-2a0d203e4a0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponsor
+    - node.type.conference
+    - node.type.sponsorship
+id: node.conference.field_sponsor
+field_name: field_sponsor
+entity_type: node
+bundle: conference
+label: Sponsor
+description: 'Select a sponsor for this item.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      sponsorship: sponsorship
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
