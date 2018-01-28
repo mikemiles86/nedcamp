@@ -1,0 +1,17 @@
+uuid: 7914c800-9ccc-42db-9ad9-a22d3e06e49c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Company
+type: company
+description: 'Use this content type to provide data on companies related to the event'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

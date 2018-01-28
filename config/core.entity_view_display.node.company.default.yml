@@ -1,0 +1,51 @@
+uuid: 528aaa21-b245-4726-82bc-f2bb2ea0cb3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.company.body
+    - field.field.node.company.field_company_logo
+    - field.field.node.company.field_company_url
+    - node.type.company
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.company.default
+targetEntityType: node
+bundle: company
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_company_logo:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_company_url:
+    weight: 102
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }
