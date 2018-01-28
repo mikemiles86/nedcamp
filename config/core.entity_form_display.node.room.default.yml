@@ -6,8 +6,10 @@ dependencies:
     - field.field.node.room.field_directions
     - field.field.node.room.field_location
     - field.field.node.room.field_room_size
+    - field.field.node.room.field_sponsor
     - node.type.room
   module:
+    - inline_entity_form
     - text
 id: node.room.default
 targetEntityType: node
@@ -34,6 +36,19 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: number
+    region: content
+  field_sponsor:
+    weight: 26
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
     region: content
   status:
     type: boolean_checkbox

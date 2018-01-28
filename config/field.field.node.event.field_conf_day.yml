@@ -1,0 +1,28 @@
+uuid: 7ae62ee2-0f6c-49e1-8a44-0921263ba639
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_conf_day
+    - node.type.conf_day
+    - node.type.event
+id: node.event.field_conf_day
+field_name: field_conf_day
+entity_type: node
+bundle: event
+label: 'Conf Day'
+description: 'Select the day this event occurs.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      conf_day: conf_day
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
