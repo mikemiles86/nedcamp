@@ -1,0 +1,21 @@
+uuid: b08b333b-ee3b-4d73-829b-352ef0711573
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_requirements
+    - node.type.training
+  module:
+    - text
+id: node.training.field_requirements
+field_name: field_requirements
+entity_type: node
+bundle: training
+label: Requirements
+description: 'Enter any requirements for attendees'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
