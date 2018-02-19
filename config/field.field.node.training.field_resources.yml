@@ -1,0 +1,23 @@
+uuid: 706a4d41-3a60-4800-b16d-6f0202f147ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resources
+    - node.type.training
+  module:
+    - link
+id: node.training.field_resources
+field_name: field_resources
+entity_type: node
+bundle: training
+label: Resources
+description: 'Provide links any resources attendees require'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link

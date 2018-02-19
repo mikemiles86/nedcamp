@@ -1,0 +1,29 @@
+uuid: 3f19ef51-5d30-4713-8c7a-19eaa5a98370
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audience_level
+    - node.type.training
+    - taxonomy.vocabulary.audience_levels
+id: node.training.field_audience_level
+field_name: field_audience_level
+entity_type: node
+bundle: training
+label: Audience
+description: 'Select the audience level(S)'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      audience_levels: audience_levels
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
