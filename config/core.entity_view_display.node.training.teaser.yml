@@ -25,4 +25,14 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_audience_level: true
+  field_conf_day: true
+  field_conf_room: true
+  field_conf_timeslot: true
+  field_conf_year: true
+  field_requirements: true
+  field_resources: true
+  field_speakers: true
+  field_status: true
+  field_topic: true
