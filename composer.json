@@ -27,6 +27,7 @@
     "drupal/media_entity_image": "^1.2",
     "drupal/pathauto": "^1.0",
     "drupal/simple_block": "^1.0@beta",
+    "drupal/superfish": "^1.2",
     "drupal/time_range": "^1.1",
     "drupal/video_embed_field": "^1.5",
     "drush/drush": "~8",
@@ -85,7 +86,8 @@
       "web/modules/contrib/{$name}": ["type:drupal-module"],
       "web/profiles/contrib/{$name}": ["type:drupal-profile"],
       "web/themes/contrib/{$name}": ["type:drupal-theme"],
-      "drush/contrib/{$name}": ["type:drupal-drush"]
+      "drush/contrib/{$name}": ["type:drupal-drush"],
+      "web/libraries/{$name}": ["type:drupal-library"]
     },
     "build-env": {
       "install-cms": [
