@@ -15,7 +15,6 @@ permissions:
   - 'access user profiles'
   - 'cancel account'
   - 'change own username'
-  - 'create company content'
   - 'create session content'
   - 'create training content'
   - 'delete own session content'
