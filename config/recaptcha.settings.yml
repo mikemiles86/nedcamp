@@ -1,5 +1,5 @@
-site_key: 6LdLsWIUAAAAAM8kUvjlHNgXvYqjPlq3wvQxi70q
-secret_key: 6LdLsWIUAAAAAHuS6bb_g_bdLY_HjbANCYl7SCQ5
+site_key:
+secret_key:
 widget:
   theme: light
   type: image
