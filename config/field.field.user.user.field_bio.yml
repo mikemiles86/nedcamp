@@ -1,0 +1,21 @@
+uuid: bd92ad6e-662a-4894-bd23-522fac023307
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_bio
+  module:
+    - text
+    - user
+id: user.user.field_bio
+field_name: field_bio
+entity_type: user
+bundle: user
+label: Bio
+description: 'Provide a brief description about yourself.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -22,7 +22,7 @@
     "drupal/core": "^8",
     "drupal/field_group": "^1.0",
     "drupal/field_permissions": "^1.0@beta",
-    "drupal/inline_entity_form": "^1.0@beta",
+    "drupal/inline_entity_form": "^1.0@RC",
     "drupal/media_entity": "^1.7",
     "drupal/media_entity_image": "^1.2",
     "drupal/pathauto": "^1.0",
