@@ -1,0 +1,7 @@
+uuid: 16fa1b7c-83af-4972-ba6e-82fbf079a051
+langcode: en
+status: false
+dependencies: {  }
+formId: node_conf_day_form
+captchaType: default
+label: null

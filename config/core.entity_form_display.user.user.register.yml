@@ -1,0 +1,97 @@
+uuid: 886f2801-3bb0-43d3-b18e-1444341ca141
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.register
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_company
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_job_title
+    - field.field.user.user.field_last_name
+    - field.field.user.user.user_picture
+  module:
+    - field_group
+    - user
+third_party_settings:
+  field_group:
+    group_user_account:
+      children:
+        - account
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        label: 'User Account'
+        open: true
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'User Account'
+    group_profile_information:
+      children:
+        - field_first_name
+        - field_last_name
+        - field_job_title
+        - field_company
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        label: 'Profile Information'
+        open: true
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Profile Information'
+_core:
+  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
+id: user.user.register
+targetEntityType: user
+bundle: user
+mode: register
+content:
+  account:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_company:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_first_name:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_job_title:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_last_name:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  contact: true
+  field_bio: true
+  language: true
+  path: true
+  timezone: true
+  user_picture: true
