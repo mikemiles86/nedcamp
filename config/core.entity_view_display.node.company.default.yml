@@ -20,13 +20,13 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
   field_company_logo:
-    weight: 103
-    label: above
+    weight: 0
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -34,18 +34,16 @@ content:
     type: image
     region: content
   field_company_url:
-    weight: 102
-    label: above
+    weight: 2
+    label: hidden
     settings:
-      trim_length: 80
+      trim_length: null
+      rel: nofollow
+      target: _blank
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
     third_party_settings: {  }
     type: link
     region: content
-  links:
-    weight: 100
-    region: content
-hidden: {  }
+hidden:
+  links: true
