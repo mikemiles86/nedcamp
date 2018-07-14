@@ -33,6 +33,8 @@
     "drupal/superfish": "^1.2",
     "drupal/time_range": "^1.1",
     "drupal/video_embed_field": "^1.5",
+    "drupal/webform": "^5.0",
+    "drupal/webform_mailchimp": "^5.4",
     "drush/drush": "~8",
     "rvtraveller/qs-composer-installer": "^1.1",
     "webflo/drupal-core-strict": "^8"
