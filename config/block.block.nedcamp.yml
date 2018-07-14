@@ -1,0 +1,22 @@
+uuid: 68f71ec8-4ee9-4745-b359-885203d994f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.nedcamp_sidebar_logo
+  module:
+    - simple_block
+  theme:
+    - showcaseplus
+id: nedcamp
+theme: showcaseplus
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'simple_block:nedcamp_sidebar_logo'
+settings:
+  id: 'simple_block:nedcamp_sidebar_logo'
+  label: NEDCamp
+  provider: simple_block
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 55fd892e-5c09-4a0e-b03b-8f68ba80c97d
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.camp_dates
+  module:
+    - simple_block
+  theme:
+    - showcaseplus
+id: campdates
+theme: showcaseplus
+region: banner
+weight: 0
+provider: null
+plugin: 'simple_block:camp_dates'
+settings:
+  id: 'simple_block:camp_dates'
+  label: 'Camp Dates'
+  provider: simple_block
+  label_display: '0'
+visibility: {  }

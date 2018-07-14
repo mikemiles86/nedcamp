@@ -1,0 +1,20 @@
+uuid: e8648d20-c187-418f-8da5-61026acaf341
+langcode: en
+status: true
+dependencies:
+  module:
+    - mailchimp_signup
+  theme:
+    - showcaseplus
+id: mailchimpsubscriptionformnedcampnews
+theme: showcaseplus
+region: footer_second
+weight: 0
+provider: null
+plugin: 'mailchimp_signup_subscribe_block:nedcamp_news'
+settings:
+  id: 'mailchimp_signup_subscribe_block:nedcamp_news'
+  label: 'Subscribe to NEDCamp News'
+  provider: mailchimp_signup
+  label_display: visible
+visibility: {  }

@@ -1,0 +1,11 @@
+uuid: 516d4bce-2ec8-477e-adbd-891da8b7a5ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+id: camp_dates
+title: 'Camp Dates'
+content:
+  value: "<p><strong>November 16 &amp;17, 2018 - Rhode Island College, Providence RI</strong></p>\r\n"
+  format: basic_html

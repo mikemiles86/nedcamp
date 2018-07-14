@@ -1,0 +1,37 @@
+uuid: a88c7faf-9412-415e-b1c5-da6c45f7a4ca
+langcode: en
+status: null
+dependencies: {  }
+id: nedcamp_news
+title: 'NEDCamp News'
+mc_lists:
+  bb12d4d5c7: bb12d4d5c7
+  4a49c7ea53: '0'
+  c9a2582ef1: '0'
+  da8ac5d4dd: '0'
+  267d0aa8bd: '0'
+  0dea76c68c: '0'
+mode: 1
+mergefields:
+  EMAIL: true
+  FNAME: true
+  LNAME: true
+  MMERGE3: true
+description: 'Mailchimp signup for news. '
+doublein: false
+send_welcome: null
+include_interest_groups: false
+settings:
+  path: ''
+  submit_button: Submit
+  confirmation_message: 'You have been successfully subscribed.'
+  destination: ''
+  mergefields:
+    EMAIL: 'O:8:"stdClass":8:{s:3:"tag";s:5:"EMAIL";s:4:"name";s:13:"Email Address";s:4:"type";s:5:"email";s:8:"required";b:1;s:13:"default_value";s:0:"";s:6:"public";b:1;s:13:"display_order";i:1;s:7:"options";O:8:"stdClass":1:{s:4:"size";i:25;}}'
+    FNAME: 'O:8:"stdClass":12:{s:8:"merge_id";i:1;s:3:"tag";s:5:"FNAME";s:4:"name";s:10:"First Name";s:4:"type";s:4:"text";s:8:"required";b:0;s:13:"default_value";s:0:"";s:6:"public";b:1;s:13:"display_order";i:2;s:7:"options";O:8:"stdClass":1:{s:4:"size";i:25;}s:9:"help_text";s:0:"";s:7:"list_id";s:10:"bb12d4d5c7";s:6:"_links";a:4:{i:0;O:8:"stdClass":4:{s:3:"rel";s:4:"self";s:4:"href";s:65:"https://us5.api.mailchimp.com/3.0/lists/bb12d4d5c7/merge-fields/1";s:6:"method";s:3:"GET";s:12:"targetSchema";s:84:"https://us5.api.mailchimp.com/schema/3.0/Definitions/Lists/MergeFields/Response.json";}i:1;O:8:"stdClass":5:{s:3:"rel";s:6:"parent";s:4:"href";s:63:"https://us5.api.mailchimp.com/3.0/lists/bb12d4d5c7/merge-fields";s:6:"method";s:3:"GET";s:12:"targetSchema";s:94:"https://us5.api.mailchimp.com/schema/3.0/Definitions/Lists/MergeFields/CollectionResponse.json";s:6:"schema";s:79:"https://us5.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/MergeFields.json";}i:2;O:8:"stdClass":5:{s:3:"rel";s:6:"update";s:4:"href";s:65:"https://us5.api.mailchimp.com/3.0/lists/bb12d4d5c7/merge-fields/1";s:6:"method";s:5:"PATCH";s:12:"targetSchema";s:84:"https://us5.api.mailchimp.com/schema/3.0/Definitions/Lists/MergeFields/Response.json";s:6:"schema";s:81:"https://us5.api.mailchimp.com/schema/3.0/Definitions/Lists/MergeFields/PATCH.json";}i:3;O:8:"stdClass":3:{s:3:"rel";s:6:"delete";s:4:"href";s:65:"https://us5.api.mailchimp.com/3.0/lists/bb12d4d5c7/merge-fields/1";s:6:"method";s:6:"DELETE";}}}'
+    LNAME: 'O:8:"stdClass":12:{s:8:"merge_id";i:2;s:3:"tag";s:5:"LNAME";s:4:"name";s:9:"Last Name";s:4:"type";s:4:"text";s:8:"required";b:0;s:13:"default_value";s:0:"";s:6:"public";b:1;s:13:"display_order";i:3;s:7:"options";O:8:"stdClass":1:{s:4:"size";i:25;}s:9:"help_text";s:0:"";s:7:"list_id";s:10:"bb12d4d5c7";s:6:"_links";a:4:{i:0;O:8:"stdClass":4:{s:3:"rel";s:4:"self";s:4:"href";s:65:"https://us5.api.mailchimp.com/3.0/lists/bb12d4d5c7/merge-fields/2";s:6:"method";s:3:"GET";s:12:"targetSchema";s:84:"https://us5.api.mailchimp.com/schema/3.0/Definitions/Lists/MergeFields/Response.json";}i:1;O:8:"stdClass":5:{s:3:"rel";s:6:"parent";s:4:"href";s:63:"https://us5.api.mailchimp.com/3.0/lists/bb12d4d5c7/merge-fields";s:6:"method";s:3:"GET";s:12:"targetSchema";s:94:"https://us5.api.mailchimp.com/schema/3.0/Definitions/Lists/MergeFields/CollectionResponse.json";s:6:"schema";s:79:"https://us5.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/MergeFields.json";}i:2;O:8:"stdClass":5:{s:3:"rel";s:6:"update";s:4:"href";s:65:"https://us5.api.mailchimp.com/3.0/lists/bb12d4d5c7/merge-fields/2";s:6:"method";s:5:"PATCH";s:12:"targetSchema";s:84:"https://us5.api.mailchimp.com/schema/3.0/Definitions/Lists/MergeFields/Response.json";s:6:"schema";s:81:"https://us5.api.mailchimp.com/schema/3.0/Definitions/Lists/MergeFields/PATCH.json";}i:3;O:8:"stdClass":3:{s:3:"rel";s:6:"delete";s:4:"href";s:65:"https://us5.api.mailchimp.com/3.0/lists/bb12d4d5c7/merge-fields/2";s:6:"method";s:6:"DELETE";}}}'
+    MMERGE3: 'O:8:"stdClass":12:{s:8:"merge_id";i:3;s:3:"tag";s:7:"MMERGE3";s:4:"name";s:7:"Website";s:4:"type";s:3:"url";s:8:"required";b:0;s:13:"default_value";s:0:"";s:6:"public";b:1;s:13:"display_order";i:4;s:7:"options";O:8:"stdClass":0:{}s:9:"help_text";s:0:"";s:7:"list_id";s:10:"bb12d4d5c7";s:6:"_links";a:4:{i:0;O:8:"stdClass":4:{s:3:"rel";s:4:"self";s:4:"href";s:65:"https://us5.api.mailchimp.com/3.0/lists/bb12d4d5c7/merge-fields/3";s:6:"method";s:3:"GET";s:12:"targetSchema";s:84:"https://us5.api.mailchimp.com/schema/3.0/Definitions/Lists/MergeFields/Response.json";}i:1;O:8:"stdClass":5:{s:3:"rel";s:6:"parent";s:4:"href";s:63:"https://us5.api.mailchimp.com/3.0/lists/bb12d4d5c7/merge-fields";s:6:"method";s:3:"GET";s:12:"targetSchema";s:94:"https://us5.api.mailchimp.com/schema/3.0/Definitions/Lists/MergeFields/CollectionResponse.json";s:6:"schema";s:79:"https://us5.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/MergeFields.json";}i:2;O:8:"stdClass":5:{s:3:"rel";s:6:"update";s:4:"href";s:65:"https://us5.api.mailchimp.com/3.0/lists/bb12d4d5c7/merge-fields/3";s:6:"method";s:5:"PATCH";s:12:"targetSchema";s:84:"https://us5.api.mailchimp.com/schema/3.0/Definitions/Lists/MergeFields/Response.json";s:6:"schema";s:81:"https://us5.api.mailchimp.com/schema/3.0/Definitions/Lists/MergeFields/PATCH.json";}i:3;O:8:"stdClass":3:{s:3:"rel";s:6:"delete";s:4:"href";s:65:"https://us5.api.mailchimp.com/3.0/lists/bb12d4d5c7/merge-fields/3";s:6:"method";s:6:"DELETE";}}}'
+  description: 'Mailchimp signup for news. '
+  doublein: false
+  include_interest_groups: false
+  safe_interest_groups: false

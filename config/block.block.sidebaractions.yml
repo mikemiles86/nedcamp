@@ -1,0 +1,22 @@
+uuid: 412690ec-e3b7-46f4-a3e4-fcefbee0a30d
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.sidebar_actions
+  module:
+    - simple_block
+  theme:
+    - showcaseplus
+id: sidebaractions
+theme: showcaseplus
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'simple_block:sidebar_actions'
+settings:
+  id: 'simple_block:sidebar_actions'
+  label: 'Sidebar Actions'
+  provider: simple_block
+  label_display: '0'
+visibility: {  }
