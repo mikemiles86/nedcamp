@@ -7,5 +7,5 @@ dependencies:
 id: nedcamp_sidebar_logo
 title: NEDCamp
 content:
-  value: "<img alt=\"NEDCamp Logo\" data-align=\"center\" data-entity-type=\"file\" data-entity-uuid=\"56b55262-36a6-42ca-bd22-160ed6ed0df7\" height=\"260\" src=\"/sites/default/files/inline-images/nedcamp_logo_no_loc.png\" width=\"317\" />\r\n<p>&nbsp;</p>\r\n"
+  value: "<p><img alt=\"NEDCAMP 2018\" data-entity-type=\"file\" data-entity-uuid=\"5a975108-b75f-478f-a4f7-14e56db8f47c\" src=\"/sites/default/files/inline-images/nedcamp_logo_2018.png\" /></p>\r\n"
   format: basic_html
