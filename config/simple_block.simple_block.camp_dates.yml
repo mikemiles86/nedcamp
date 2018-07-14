@@ -3,9 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.basic_html
+    - filter.format.full_html
 id: camp_dates
 title: 'Camp Dates'
 content:
-  value: "<p><strong>November 16 &amp;17, 2018 - Rhode Island College, Providence RI</strong></p>\r\n"
-  format: basic_html
+  value: "<p style=\"text-align:center; font-size:24px; text-transform: uppercase; padding: 15px 0 15px 0;\">November 16 &amp;17, 2018 - Rhode Island College, Providence RI</p>\r\n"
+  format: full_html
