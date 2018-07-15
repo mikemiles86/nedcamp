@@ -3,9 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.basic_html
+    - filter.format.full_html
 id: nedcamp_sidebar_logo
 title: NEDCamp
 content:
   value: "<p><img alt=\"NEDCAMP 2018\" data-entity-type=\"file\" data-entity-uuid=\"5a975108-b75f-478f-a4f7-14e56db8f47c\" src=\"/sites/default/files/inline-images/nedcamp_logo_2018.png\" /></p>\r\n"
-  format: basic_html
+  format: full_html
