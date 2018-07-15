@@ -3,9 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.basic_html
+    - filter.format.full_html
 id: sidebar_actions
 title: 'Sidebar Actions'
 content:
-  value: "<ul>\r\n\t<li><a href=\"/sponsorship\">Become a Sponsor</a></li>\r\n\t<li>Submit a Session</li>\r\n\t<li><a href=\"/Registration\">Purchase a Ticket</a></li>\r\n\t<li><a href=\"/Training\">Register for Training</a></li>\r\n</ul>\r\n"
-  format: basic_html
+  value: "<ul>\r\n\t<li><a class=\"button\" href=\"/sponsorship\">Become a Sponsor</a></li>\r\n\t<li><a class=\"button\" href=\"#\">Submit a Session</a></li>\r\n\t<li><a class=\"button\" href=\"/Registration\">Purchase a Ticket</a></li>\r\n\t<li><a class=\"button\" href=\"/Training\">Register for Training</a></li>\r\n</ul>\r\n"
+  format: full_html
