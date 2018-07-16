@@ -201,7 +201,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<a href="/bog">View All</a>'
+            value: '<a href="/blog">View All</a>'
             format: basic_html
           plugin_id: text
       defaults:

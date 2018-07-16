@@ -1,0 +1,22 @@
+uuid: fb82b541-059e-4b63-83db-abf13a61e3ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.footer_contact
+  module:
+    - simple_block
+  theme:
+    - showcaseplus
+id: contract
+theme: showcaseplus
+region: footer_first
+weight: -7
+provider: null
+plugin: 'simple_block:footer_contact'
+settings:
+  id: 'simple_block:footer_contact'
+  label: Contract
+  provider: simple_block
+  label_display: '0'
+visibility: {  }

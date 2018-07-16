@@ -9,7 +9,7 @@ dependencies:
 id: mailchimpsubscriptionformnedcampnews
 theme: showcaseplus
 region: footer_second
-weight: 0
+weight: -8
 provider: null
 plugin: 'mailchimp_signup_subscribe_block:nedcamp_news'
 settings:
