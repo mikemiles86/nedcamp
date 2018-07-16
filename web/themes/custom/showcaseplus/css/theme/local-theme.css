@@ -21,3 +21,7 @@
 .region-content a {
     text-decoration: underline;
 }
+
+a.button {
+    text-decoration: none;
+}
