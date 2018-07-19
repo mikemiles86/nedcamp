@@ -1,0 +1,3 @@
+configuration_names:
+  0: sendgrid_integration.settings
+  2: mailchimp.settings
