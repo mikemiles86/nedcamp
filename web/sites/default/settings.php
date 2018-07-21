@@ -41,7 +41,8 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
   // Redirect to https://$primary_domain in the Live environment
   if ($_ENV['PANTHEON_ENVIRONMENT'] === 'live') {
     /** Replace www.example.com with your registered domain name */
-    $primary_domain = 'nedcamp.org';
+    //$primary_domain = 'nedcamp.org';
+    $primary_domain = $_SERVER['HTTP_HOST'];
   }
   else {
     // Redirect to HTTPS on every Pantheon environment.
