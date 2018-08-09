@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.company.body
     - field.field.node.company.field_company_logo
     - field.field.node.company.field_company_url
+    - image.style.large
     - node.type.company
   module:
     - image
@@ -28,7 +29,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: large
       image_link: ''
     third_party_settings: {  }
     type: image
