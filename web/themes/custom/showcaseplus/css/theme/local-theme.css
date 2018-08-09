@@ -33,3 +33,12 @@ a.button {
 .view-display-id-sponsor_sidebar .item-list ul li {
      margin-bottom: 2em;
 }
+
+#block-nedcamplogo p {
+    margin-left: 2em;
+    padding: 0px;
+}
+
+#block-nedcamp {
+    padding-bottom: 1em;
+}
