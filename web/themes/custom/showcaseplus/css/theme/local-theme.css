@@ -25,3 +25,11 @@
 a.button {
     text-decoration: none;
 }
+
+.view-id-sponsors .node__header {
+    display: none;
+}
+
+.view-display-id-sponsor_sidebar .item-list ul li {
+     margin-bottom: 2em;
+}

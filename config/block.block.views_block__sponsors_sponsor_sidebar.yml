@@ -1,25 +1,31 @@
-uuid: 015a4a41-2a18-4a9b-ac41-6e08a62e9681
+uuid: a2a9874b-dab5-4ce7-a549-b53ba4f3885a
 langcode: en
 status: true
 dependencies:
   config:
     - views.view.sponsors
   module:
+    - system
     - views
   theme:
     - showcaseplus
-id: views_block__sponsors_block_1
+id: views_block__sponsors_sponsor_sidebar
 theme: showcaseplus
 region: sidebar_first
 weight: 0
 provider: null
-plugin: 'views_block:sponsors-block_1'
+plugin: 'views_block:sponsors-sponsor_sidebar'
 settings:
-  id: 'views_block:sponsors-block_1'
+  id: 'views_block:sponsors-sponsor_sidebar'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
   context_mapping: {  }
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /sponsors
+    negate: true
+    context_mapping: {  }

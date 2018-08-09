@@ -1,0 +1,12 @@
+apikey: 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
+test_defaults:
+  to: rick@flowmediadesign.com
+  subject: 'Test Email from SendGrid Module'
+  body:
+    value: 'Test Message for SendGrid.'
+    format: plain_text
+  from_name: NEDCamp
+  to_name: Rick
+  reply_to: ''
+_core:
+  default_config_hash: g4qz7cPnloXFwtnLYfIKI2VS0gf_UFOz_I2uQiiulC8
