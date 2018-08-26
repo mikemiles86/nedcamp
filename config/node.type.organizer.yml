@@ -1,0 +1,17 @@
+uuid: defe3651-a679-4884-a11e-e70be7989a3d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Organizer
+type: organizer
+description: 'Content type for camp organizer'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

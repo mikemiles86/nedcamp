@@ -1,0 +1,19 @@
+uuid: 715f0fca-6442-4b48-9d75-0686fe866ad4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_first_name
+    - node.type.organizer
+id: node.organizer.field_first_name
+field_name: field_first_name
+entity_type: node
+bundle: organizer
+label: 'First name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
