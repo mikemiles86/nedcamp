@@ -1,0 +1,9 @@
+uuid: f6381f60-0af4-4d83-9979-ad9e5812cbb3
+langcode: en
+status: true
+dependencies: {  }
+id: node_type_conf_timeslot
+action: page_redirect
+allow_override: 1
+redirect: /conference/2018
+redirect_code: 301

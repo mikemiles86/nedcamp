@@ -30,6 +30,7 @@
     "drupal/media_entity": "^1.7",
     "drupal/media_entity_image": "^1.2",
     "drupal/pathauto": "^1.0",
+    "drupal/rabbit_hole": "^1.0",
     "drupal/recaptcha": "^2.3",
     "drupal/sendgrid_integration": "^1.2",
     "drupal/simple_block": "^1.0@beta",
