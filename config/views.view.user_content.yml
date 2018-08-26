@@ -472,19 +472,9 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'Seems like you have not submitted any content yet.'
-            format: basic_html
+            value: "<p>Seems like you have not submitted any content yet.</p>\n<p><a href=\"/node/add/session\">Submit a session</a></p>"
+            format: full_html
           plugin_id: text
-        node_listing_empty:
-          id: node_listing_empty
-          table: node
-          field: node_listing_empty
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          entity_type: node
-          plugin_id: node_listing_empty
       relationships:
         uid:
           id: uid
