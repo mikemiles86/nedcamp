@@ -24,5 +24,8 @@ permissions:
   - 'post comments'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'view all revisions'
   - 'view media'
+  - 'view own field_conf_year'
+  - 'view own field_status'
   - 'view own unpublished content'
