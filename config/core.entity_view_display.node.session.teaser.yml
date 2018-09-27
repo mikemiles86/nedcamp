@@ -5,6 +5,16 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.session.body
+    - field.field.node.session.field_audience_level
+    - field.field.node.session.field_conf_day
+    - field.field.node.session.field_conf_room
+    - field.field.node.session.field_conf_timeslot
+    - field.field.node.session.field_conf_year
+    - field.field.node.session.field_recording
+    - field.field.node.session.field_slides
+    - field.field.node.session.field_speakers
+    - field.field.node.session.field_status
+    - field.field.node.session.field_topic
     - node.type.session
   module:
     - text
@@ -17,15 +27,24 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 0
     settings:
-      trim_length: 600
+      trim_length: 300
     third_party_settings: {  }
     region: content
   links:
-    weight: 100
+    weight: 1
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
+  field_audience_level: true
+  field_conf_day: true
+  field_conf_room: true
+  field_conf_timeslot: true
+  field_conf_year: true
+  field_recording: true
   field_slides: true
   field_speakers: true
   field_status: true
+  field_topic: true
