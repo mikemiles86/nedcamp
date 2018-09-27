@@ -1,0 +1,9 @@
+uuid: bb2d0d83-0fac-4277-8fa3-640122fc5ff9
+langcode: en
+status: true
+dependencies: {  }
+id: node_type_sponsorship
+action: page_redirect
+allow_override: 1
+redirect: /sponsors/2018
+redirect_code: 301

@@ -1,0 +1,7 @@
+uuid: 59babc01-95bd-449c-8298-c805af201239
+langcode: en
+status: true
+dependencies: {  }
+formId: mailchimp_signup_subscribe_block_nedcamp_news_form
+captchaType: recaptcha/reCAPTCHA
+label: mailchimp_signup_subscribe_block_nedcamp_news_form

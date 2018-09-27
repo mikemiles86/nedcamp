@@ -1,0 +1,11 @@
+uuid: 1b13bb6c-ee62-474a-bc1e-550ec1a5ff98
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: nedcamp_sidebar_logo
+title: NEDCamp
+content:
+  value: "<p><img alt=\"NEDCAMP 2018\" data-entity-type=\"file\" data-entity-uuid=\"5a975108-b75f-478f-a4f7-14e56db8f47c\" src=\"/themes/custom/showcaseplus/images/nedcamp_logo_men.png\" /></p>\r\n"
+  format: full_html

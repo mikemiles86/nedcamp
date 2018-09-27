@@ -1,0 +1,11 @@
+uuid: 5cc142c7-ac61-4c54-ba9e-76c8cade4003
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: footer_contact
+title: Contract
+content:
+  value: "<p><a href=\"//twitter.com/nedcamp\">Twitter</a></p>\r\n\r\n<p><a href=\"https://www.facebook.com/NewEnglandDrupalcamp\">Facebook</a></p>\r\n\r\n<p><a href=\"http://www.pinterest.com/NEDCAMP\">Pintrest</a></p>\r\n\r\n<p><a href=\"mailto:admin@nedcamp.org\">admin@nedcamp.org</a></p>\r\n"
+  format: full_html

@@ -1,0 +1,19 @@
+uuid: aa0adc54-f535-4888-93f1-878e5c8668ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_last_name
+    - node.type.organizer
+id: node.organizer.field_last_name
+field_name: field_last_name
+entity_type: node
+bundle: organizer
+label: 'Last name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
