@@ -7,6 +7,7 @@ _core:
 id: feedback
 label: 'Website feedback'
 recipients:
+  - admin@nedcamp.org
   - rick@flowmediadesign.com
 reply: ''
 weight: 0

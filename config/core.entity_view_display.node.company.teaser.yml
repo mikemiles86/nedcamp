@@ -5,26 +5,28 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.company.body
+    - field.field.node.company.field_company_logo
+    - field.field.node.company.field_company_url
+    - image.style.large
     - node.type.company
   module:
-    - text
+    - image
     - user
 id: node.company.teaser
 targetEntityType: node
 bundle: company
 mode: teaser
 content:
-  body:
+  field_company_logo:
+    type: image
+    weight: 0
+    region: content
     label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
     settings:
-      trim_length: 600
+      image_style: large
+      image_link: content
     third_party_settings: {  }
-    region: content
-  links:
-    weight: 100
-    region: content
 hidden:
-  field_company_logo: true
+  body: true
   field_company_url: true
+  links: true

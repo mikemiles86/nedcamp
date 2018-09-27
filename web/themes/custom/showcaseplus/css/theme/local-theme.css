@@ -7,3 +7,38 @@
 .menu-item a {
     color: #000000;
 }
+
+.region-sidebar-first ul {
+    list-style-type: none;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.main-content__section {
+    padding-top: 100px;
+}
+
+.region-content a {
+    text-decoration: underline;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+.view-id-sponsors .node__header {
+    display: none;
+}
+
+.view-display-id-sponsor_sidebar .item-list ul li {
+     margin-bottom: 2em;
+}
+
+#block-nedcamplogo p {
+    margin-left: 2em;
+    padding: 0px;
+}
+
+#block-nedcamp {
+    padding-bottom: 1em;
+}
