@@ -4,17 +4,27 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.conf_timeslot.field_conf_year
+    - field.field.node.conf_timeslot.field_time_range
     - node.type.conf_timeslot
   module:
+    - datetime_range
     - user
 id: node.conf_timeslot.teaser
 targetEntityType: node
 bundle: conf_timeslot
 mode: teaser
 content:
-  links:
-    weight: 100
+  field_time_range:
+    type: daterange_default
+    weight: 0
     region: content
+    label: hidden
+    settings:
+      timezone_override: America/New_York
+      format_type: html_time
+      separator: '-'
+    third_party_settings: {  }
 hidden:
   field_conf_year: true
-  field_time_range: true
+  links: true

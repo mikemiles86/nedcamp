@@ -1,0 +1,59 @@
+uuid: f9c94184-1fda-4b04-ba13-421c28ac8beb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.schedule_listing
+    - field.field.node.session.body
+    - field.field.node.session.field_audience_level
+    - field.field.node.session.field_conf_day
+    - field.field.node.session.field_conf_room
+    - field.field.node.session.field_conf_timeslot
+    - field.field.node.session.field_conf_year
+    - field.field.node.session.field_recording
+    - field.field.node.session.field_slides
+    - field.field.node.session.field_speakers
+    - field.field.node.session.field_status
+    - field.field.node.session.field_topic
+    - node.type.session
+  module:
+    - user
+id: node.session.schedule_listing
+targetEntityType: node
+bundle: session
+mode: schedule_listing
+content:
+  field_audience_level:
+    weight: 1
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_conf_room:
+    weight: 2
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_speakers:
+    weight: 0
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  body: true
+  field_conf_day: true
+  field_conf_timeslot: true
+  field_conf_year: true
+  field_recording: true
+  field_slides: true
+  field_status: true
+  field_topic: true
+  links: true
